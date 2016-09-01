@@ -11,14 +11,14 @@ void setup()
 void draw()
 {
   stroke(132,172,255,100);
-  int num = (int)(Math.random() *18) - 9;
-  for(int y = 50; y < 500; y = y + 30)
-  	{
-  		for(int x = 0; x < 500; x = x + 50)
-  		{
-  			line(x, y, x, y + (int)(Math.random() * 10));
-  		}
-  	}
+  fill(150,150,150);
+  noStroke();
+  ellipse(200,25,250,100);
+  ellipse(400,25,250,100);
+  fill(255,255,255);
+  ellipse(0,0,200,200);
+  fill(100,50,19);
+  rect(0,400,500,300);
 }
 void mousePressed()
 {
