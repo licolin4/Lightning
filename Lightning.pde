@@ -10,7 +10,6 @@ void setup()
 }
 void draw()
 {
-  stroke(132,172,255,100);
   fill(150,150,150);
   noStroke();
   ellipse(200,25,250,100);
@@ -19,6 +18,17 @@ void draw()
   ellipse(0,0,200,200);
   fill(100,50,19);
   rect(0,400,500,300);
+  fill(61,43,31);
+  rect(305,320,40,80);
+  fill(0,200,100);
+  ellipse(310,275,50,50);
+  ellipse(300,290,50,50);
+  ellipse(310,295,50,50);
+  ellipse(310,305,50,50);
+  ellipse(325,265,50,50);
+  ellipse(348,275,50,50);
+  ellipse(345,300,50,50);
+  ellipse(330,310,50,50);
 }
 void mousePressed()
 {
@@ -28,7 +38,7 @@ void mousePressed()
   int endY = startY + (int)(Math.random() * 5);
   while(startY < 500)
   	{
-  		stroke(200,255,150);
+  		stroke(startX/2,startX/2,150);
   		line(startX,startY,endX,endY);
   		startX = endX;
   		startY = endY;
@@ -36,5 +46,4 @@ void mousePressed()
   		endY = endY + (int)(Math.random() * 10);
   	}
 }
-
 
